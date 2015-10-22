@@ -1,5 +1,5 @@
 ---
-layout:     post
+layout:     blog
 title:      pring WeB Flow　实战
 subtitle:   通过实例了解具体操作
 date:       2015-10-22 20:31:00
