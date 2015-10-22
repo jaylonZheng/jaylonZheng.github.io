@@ -3,8 +3,8 @@ title: 郑江龙 Blog
 SEOTitle: 郑江龙的博客 | Joe Blog
 header-img: img/home-bg.jpg
 email: zjl_915@126.com
-description: "关于前端与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Front-End Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
-keyword: "郑江龙,Joe，郑江龙的博客, Hux Blog, 博客, 个人网站, 互联网, Java,架构，设计模式,后端,"
+description: "郑江龙的技术私房菜 | 郑江龙，Web & Java，linux | 这里是 @入镜繁华 的个人博客，与你一起发现更大的世界。"
+keyword: "郑江龙,Joe，郑江龙的博客, 郑江龙Blog, 博客, 个人网站, 互联网, Java,架构，linux,设计模式,后端,"
 url: "http://jaylonZheng.github.io"
 baseurl: ""
 
@@ -58,7 +58,7 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "不积跬步，无以至千里；不积小流，无以成江海。通过不断积累和沉淀，能够不断进步"
+sidebar-about-description: "不积跬步，无以至千里；不积小流，无以成江海。通过不断积累和沉淀，能够不断进步与成长．"
 sidebar-avatar: /img/avatar-hux.jpg     # use absolute URL.
 
 
