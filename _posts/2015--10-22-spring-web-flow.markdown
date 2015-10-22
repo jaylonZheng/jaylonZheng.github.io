@@ -2,11 +2,9 @@
 layout:     post
 title:      "Spring WeB Flow初识"
 subtitle:   "介绍Spring WeB Flow基本概念和流程"
-iframe:     "http://jaylonZheng.github.io/spring-web-flow/"
 date:       2015-10-22 12:00:00
 author:     "郑江龙"
-categories: spring
-header-img: "img/post-bg-alibaba.jpg"
+header-img: "img/post-bg-unix-linux.jpg"
 tags:
     - Spring
     - java
@@ -37,16 +35,16 @@ org.springframe.webflow-x.x.x.RELEASE.jar
  注册表的主要工作时负责流程的定义查找，加载和注册，**不负责创建和执行**．注册好的流程提供给执行器，是执行器能够查找并使用这些流程．
  
 
-    <flow:flow-registry id="flowRegistry" base-path="/WEB-INF/flows">
-        <flow:flow-location-pattern value="*-flow.xml" />
-    <flow:flow-registry>
+	<flow:flow-registry id="flowRegistry" base-path="/WEB-INF/flows">
+		<flow:flow-location-pattern value="*-flow.xml" />
+	<flow:flow-registry>
  
  这里定义了流程注册表flowRegistry，指定了流程定义的文件位置在/WEB-INF/flows下，并且文件名字以-flow.xml.注册表将匹配的所有文件加载，并注册这些流程．
  当然也可以通过flow-location-pattern指定文件名字来加载,还可以为该流程设置具体的ID．
 ###2.3 织入流程执行器
 主要负责驱动流程的执行．当用户进入一个流程时，流程执行器就会为用户创建并启动一个流程．
 
-    ＜flow:flow executor id="flowExecutor" flow-refistry="flowRegistry"/>
+	<flow:flow executor id="flowExecutor" flow-refistry="flowRegistry"/>
 
 ###2.4 处理流程请求
 配置FlowHandlerMapping
@@ -66,16 +64,16 @@ org.springframe.webflow-x.x.x.RELEASE.jar
 1)视图(view)：为用户展现信息，支持任意视图类型．
 有３种写法
 
-    １．<view-state id="welcome"/>  id对应流程内标状态和试图名称
-    ２．<view-state id="welcome" view="greeting"/>　
-    ３．<view-state id="takePlayment" model="flowScope.paymentDetails"> 绑定流程范围的paymentDetails对像
+  1. < view-state id="welcome"/>  id对应流程内标状态和试图名称
+  2. < view-state id="welcome" view="greeting"/>　
+  3. < view-state id="takePlayment" model="flowScope.paymentDetails"> 绑定流程范围的paymentDetails对像
 
 2)行为状态
 行为状态是应用程序自身执行的任务，可以理解为方法调用，根据调用结果转移状态．
-
-    <action-state id="saveOrder" 
+	<action-state id="saveOrder" 
         <evaluate expression="pizzaFlowActions.saveOrder(order)"/>
     </action-state>
+	
 pizzaFlowActions是指某个bean ID
 3)决策状态
 通过条件判断决定转移．
@@ -88,27 +86,27 @@ pizzaFlowActions是指某个bean ID
 
 4)子流程状态
 运行一个正在执行的流程调用另一个流程．类似于一个方法调用另一个方法
-<subflow-state id="order" subflow="pizaa/order"
-    <input name="order" value="order" />
-    <transition on="orderCreated" to="payment">
-</subflow-state>
-＂< input >＂ 是作为子流程的输入．
+	<subflow-state id="order" subflow="pizaa/order"
+	    <input name="order" value="order" />
+	    <transition on="orderCreated" to="payment">
+	</subflow-state>
+	＂< input >＂ 是作为子流程的输入．
 ５)结束状态
-<end-state id="customerReady">
+	<end-state id="customerReady">
 
 ####2.5.2 转移
 局部转移，在某个状态下适用
-< transition to="">:从当前状态转移到to对应的状态
-< transition on="" to=""> ：如果触发了on对应的事件，则跳到to事件
+	< transition to="">:从当前状态转移到to对应的状态
+	< transition on="" to=""> ：如果触发了on对应的事件，则跳到to事件
 全局转移，所有状态都可以
-< global-transitions>
-     < transition on="" to="" />
-< /global-transitions>
+	< global-transitions>
+	     < transition on="" to="" />
+	< /global-transitions>
 ####2.5.3 数据
 １.声明变量包含３种
-< var name="" class="">
-< evaluate result="" expression="">　expression中可以用ＳpEL．
-<set name="" value=" "  >value可以用ＳpEL．
+	< var name="" class="">
+	< evaluate result="" expression="">　expression中可以用ＳpEL．
+	<set name="" value=" "  >value可以用ＳpEL．
 ２．作用域
 Conversation:最高层级的流程开始创建时创建，在最高层级的流程结束时销毁．最高层级流程与其子进程共享
 Flow: 流程**开始创建**时创建，在流程销毁时销毁．
@@ -119,11 +117,11 @@ View:进入**视图**状态时创建，退出这个状态时销毁．
 **var 始终时流程作用域
 set 和 evaluate通过name 和result属性前缀指定作用域**
 ##小结
-１．Spring Web Flow主要用于流程编程，实现了流程定义，流程行为和视图解耦．
-２．Ｓpring　Web　Flow在springMVC基础上创立． 需要DisptacherFilter分配
-3.整个流程是流程注册表查找，加载和注册流程定义．FlowHandlerMapping根据用户请求查找URL对应流程，并使用FlowHandlerAdapter执行．
-4.流程由三个主要元定义的：状态，转移和流程数据．
-5.状态包括是行为(action),决策(decision),结束(end),子流程(subflow)或视图(view)类型
+1. Spring Web Flow主要用于流程编程，实现了流程定义，流程行为和视图解耦．
+2. Ｓpring　Web　Flow在springMVC基础上创立． 需要DisptacherFilter分配
+3. 整个流程是流程注册表查找，加载和注册流程定义．FlowHandlerMapping根据用户请求查找URL对应流程，并使用FlowHandlerAdapter执行．
+4. 流程由三个主要元定义的：状态，转移和流程数据．
+5. 状态包括是行为(action),决策(decision),结束(end),子流程(subflow)或视图(view)类型
 6. 转移分为局部和全局，共三种配置方法
 7. 数据作用域有５种:Flow,Conversation,Ｒequest,Flash,View
 
