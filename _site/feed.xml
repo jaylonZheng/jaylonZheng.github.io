@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>郑江龙 Blog</title>
+    <description>郑江龙的技术私房菜 | 郑江龙，Web &amp; Java，linux | 这里是 @入镜繁华 的个人博客，与你一起发现更大的世界。</description>
+    <link>http://jaylonZheng.github.io/</link>
+    <atom:link href="http://jaylonZheng.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 22 Oct 2015 19:55:35 +0800</pubDate>
+    <lastBuildDate>Thu, 22 Oct 2015 19:55:35 +0800</lastBuildDate>
+    <generator>Jekyll v1.4.2</generator>
+    
+      <item>
+        <title>JavaScript 模块化七日谈</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;下滑这里查看更多内容&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;7月9日，我在公司内部进行了名为「JavaScript 模块化七日谈」分享，并将该 Slides 分享到了微博上。出乎意料地，这篇微博先后被 @JS小组 @尤小右 @寸志 等近 200 人转发，阅读达到 10w，获得了还不错的评价。&lt;/p&gt;
+
+&lt;p&gt;于是，我决定将它重新发到我的博客上，并为它专门制作了适用于 Keynote 展示文稿的新布局。它能自动根据屏幕大小/旋转以一定比例填充屏幕，你也可以直接点击下方链接在新页面打开，来获得更好的、沉浸式的全屏体验&lt;/p&gt;
+
+&lt;h3 id=&quot;watch-slides-httphuangxuanmejs-module-7day&quot;&gt;&lt;a href=&quot;http://huangxuan.me/js-module-7day&quot;&gt;Watch Slides →&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://huangxuan.me/js-module-7day/attach/qrcode.png&quot; width=&quot;350&quot; height=&quot;350&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;small class=&quot;img-hint&quot;&gt;你也可以通过扫描二维码在手机上观看&lt;/small&gt;&lt;/p&gt;
+
+&lt;p&gt;这个 Web Slides 开源在&lt;a href=&quot;https://github.com/Huxpro/js-module-7day&quot;&gt;我的 Github 上&lt;/a&gt;，欢迎你帮助我完善这个展示文稿，你可以给我提 issue，可以 fork &amp;amp; pull request。如果它能帮助到你了，希望你还能不吝啬 star 一下这个项目&lt;/p&gt;
+
+&lt;h3 id=&quot;catalog&quot;&gt;Catalog&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;第一日 上古时期 &lt;strong&gt;&lt;em&gt;Module?&lt;/em&gt;&lt;/strong&gt; 从设计模式说起&lt;/li&gt;
+  &lt;li&gt;第二日 石器时代 &lt;strong&gt;&lt;em&gt;Script Loader&lt;/em&gt;&lt;/strong&gt; 只有封装性可不够，我们还需要加载&lt;/li&gt;
+  &lt;li&gt;第三日 蒸汽朋克 &lt;strong&gt;&lt;em&gt;Module Loader&lt;/em&gt;&lt;/strong&gt; 模块化架构的工业革命&lt;/li&gt;
+  &lt;li&gt;第四日 号角吹响 &lt;strong&gt;&lt;em&gt;CommonJS&lt;/em&gt;&lt;/strong&gt; 征服世界的第一步是跳出浏览器&lt;/li&gt;
+  &lt;li&gt;第五日 双塔奇兵 &lt;strong&gt;&lt;em&gt;AMD/CMD&lt;/em&gt;&lt;/strong&gt; 浏览器环境模块化方案&lt;/li&gt;
+  &lt;li&gt;第六日 精灵宝钻 &lt;strong&gt;&lt;em&gt;Browserify/Webpack&lt;/em&gt;&lt;/strong&gt; 大势所趋，去掉这层包裹！&lt;/li&gt;
+  &lt;li&gt;第七日 王者归来 &lt;strong&gt;&lt;em&gt;ES6 Module&lt;/em&gt;&lt;/strong&gt; 最后的战役&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;thanks&quot;&gt;Thanks&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://lab.hakim.se/reveal-js&quot;&gt;Reveal.js&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Jul 2015 00:00:00 +0800</pubDate>
+        <link>http://jaylonZheng.github.io/demo/2015/07/09/js-module-7day/</link>
+        <guid isPermaLink="true">http://jaylonZheng.github.io/demo/2015/07/09/js-module-7day/</guid>
+        
+        <category>前端开发</category>
+        
+        <category>JavaScript</category>
+        
+        
+        <category>demo</category>
+        
+      </item>
+    
+      <item>
+        <title>「知乎」为什么阿里系软件体验都不好？</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;这篇文章转载自&lt;a href=&quot;http://www.zhihu.com/question/25657351/answer/31278511&quot;&gt;我在知乎上的回答&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;&lt;b&gt;一言以蔽之，优先级。&lt;/b&gt;
+    &lt;br /&gt;这个优先级并不是由谁或者哪个Boss定的，而是&lt;b&gt;长期的市场竞争和业务需求下的结果&lt;/b&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;为什么企鹅家的App用户体验较好？&lt;/b&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    企鹅家的主力产品，QQ、微信、QQ音乐、QQ空间 等，多是IM（即时通讯）、SNS（社交网络）、数字娱乐 等形态的产品。
+    &lt;br /&gt;
+    &lt;br /&gt;&lt;b&gt;这类产品往往必须「直接依靠优秀的产品服务与用户体验」来赢得用户。&lt;/b&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;如果这点做不好，产品就无法在竞争中脱颖而出。这也使得在企鹅内部，&lt;b&gt;围绕这部分的要求，需求，反馈 &lt;/b&gt;&lt;b&gt;都一定最多，使得企鹅不得不把这部分做好&lt;/b&gt;。
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;那为什么阿里系的App用户体验较差？&lt;/b&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    阿里系的主力产品，从1688、淘宝、再到支付宝、天猫、淘宝旅行、淘点点、一淘、旺旺，要么是电商类产品，要么就是电商类的延伸产品。
+    &lt;br /&gt;
+    &lt;br /&gt;而这类产品的核心竞争力（或者说要做好的难处），往往在&lt;b&gt;「如何与实体经济，甚至政府 打交道」、&lt;/b&gt;&lt;b&gt;「如何做好运营」，&lt;/b&gt;而非优秀的用户体验。
+    &lt;br /&gt;
+    &lt;br /&gt;应该说，阿里从来都不是不重视用户体验，这两年更是愈发重视。但是因为身处这样的市场环境，&lt;b&gt;阿里必须先完成这些优先级更高的需求（海量的业务，运营需求）以抢占市场，&lt;/b&gt;
+    &lt;br /&gt;这才导致阿里内部无法有太多精力focus到客户端体验上。
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;上面就算基本回答了题主的问题，
+    &lt;br /&gt;不过，知乎惯例，多说几句：
+    &lt;br /&gt;
+    &lt;br /&gt;&lt;b&gt;其实，上面的答案，也可以说这都是说辞。&lt;/b&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;在我刚刚加入阿里的时候，我也一度纳闷甚至郁闷这个事。直到我开始接触更多的项目，我才能逐渐理解「为什么会这样」。
+    &lt;br /&gt;
+    &lt;br /&gt;&lt;b&gt;但是，这并不足以成为借口。&lt;/b&gt;
+    &lt;br /&gt;&lt;b&gt;该不该改？ 当然该改。&lt;/b&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;我相信几乎所有阿里人，尤其UED，肯定都不希望这样。
+    &lt;br /&gt;只能说，这需要阿里投入更多的人、更多的时间、更多的努力来做好
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;
+    &lt;br /&gt;以上。
+    &lt;br /&gt;
+    &lt;br /&gt;利益相关：
+    &lt;br /&gt;阿里员工
+    &lt;br /&gt;
+    &lt;br /&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Wed, 01 Oct 2014 12:00:00 -0000</pubDate>
+        <link>http://jaylonZheng.github.io/demo/2014/10/01/why-alibaba-ux-sucks/</link>
+        <guid isPermaLink="true">http://jaylonZheng.github.io/demo/2014/10/01/why-alibaba-ux-sucks/</guid>
+        
+        <category>知乎</category>
+        
+        <category>阿里巴巴</category>
+        
+        <category>交互设计</category>
+        
+        
+        <category>demo</category>
+        
+      </item>
+    
+  </channel>
+</rss>

@@ -1,8 +1,8 @@
 ---
 layout:     keynote
-title:      "JavaScript 模块化七日谈"
+title:      "JavaScript 模块化七日谈55"
 subtitle:   "Keynote: JavaScript Modularization Seven Day"
-iframe:     "http://huangxuan.me/js-module-7day/"
+iframe:     "http://jaylonZheng.github.io/js-module-7day/"
 date:       2015-07-09
 categories: demo
 author:     "Hux"

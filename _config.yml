@@ -1,8 +1,7 @@
 # Site settings
 title: 郑江龙 Blog
 SEOTitle: 郑江龙的博客 | Joe Blog
-header-img: img/home-bg.jpg/home/zjl/Blog/_posts/demo/2014-10-01-why-alibaba-ux-sucks.markdown
-/home/zjl/Blog/_posts/demo/2015-07-09-js-module-7day.markdown
+header-img: img/home-bg.jpg
 email: zjl_915@126.com
 description: "郑江龙的技术私房菜 | 郑江龙，Web & Java，linux | 这里是 @入镜繁华 的个人博客，与你一起发现更大的世界。"
 keyword: "郑江龙,Joe，郑江龙的博客, 郑江龙　Blog, 博客, 个人网站, 互联网, Java,架构，linux,设计模式,后端,"
@@ -23,7 +22,7 @@ github_username: jaylonZheng
 
 # Build settings
 highlighter: pygments
-permalink:pretty
+permalink: pretty
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
