@@ -1,10 +1,18 @@
 ---
 layout: page
-description: "吾尝终日而思矣，不如须臾之所学也！"
+description: "分类"
 ---
 
-{% for post in paginator.posts %}
+{% for category in site.categories %}
 <div class="post-preview">
+	<h2>{{ category | first }}</h2>
+	</span>{{ category | last | size }}</span>
+	<ul class="arc-list">
+	    {% for post in category.last %}
+		<li>{{ post.date | date:"%d/%m/%Y"}}<a href="{{ post.url }}">{{ post.title }}</a></li>
+	    {% endfor %}
+	</ul>
+
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
             {{ post.title }}
@@ -25,20 +33,9 @@ description: "吾尝终日而思矣，不如须臾之所学也！"
 <hr>
 {% endfor %}
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+<!-- 分类 -->
 
+    2222222222222222222222222222222222222222222222222222222222
+	
 
+ 33333333333333333333333333333333333333333333333

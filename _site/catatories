@@ -12,7 +12,7 @@
 
     <title>郑江龙的博客 | Joe Blog</title>
 
-    <link rel="canonical" href="http://jaylonZheng.github.io/">
+    <link rel="canonical" href="http://jaylonZheng.github.io/catatories">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -181,59 +181,24 @@ $(document).ready(function () {
                 post-container
             ">
     			
-<div class="post-preview">
-    <a href="/spring/spring-web-flow-action.html">
-        <h2 class="post-title">
-            pring WeB Flow　实战
-        </h2>
-        
-        <h3 class="post-subtitle">
-            通过实例了解具体操作
-        </h3>
-        
-        <div class="post-content-preview">
-            sd dfasdf
-
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by 郑江龙 on October 22, 2015
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/spring/spring-web-flow.html">
-        <h2 class="post-title">
-            Spring WeB Flow初识
-        </h2>
-        
-        <h3 class="post-subtitle">
-            介绍Spring WeB Flow基本概念和流程
-        </h3>
-        
-        <div class="post-content-preview">
-            
-  本博文主要讲如何Spring WeB Flow的原理以及如何使用
-
-
-1背景介绍
-
-1.1背景
-平时中我们尝具有一些流程化的操作，如上网购物时，一般时选中物品–&gt;加入购物车–&gt;提交订单–&gt;付款．在spring里就专门为这种流程化操作提供一个Web框架,Spring  Web Flow，它时Spring的一个子项目，并不属于Spring的一部分. Spring Web ...
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by 郑江龙 on October 22, 2015
-    </p>
-</div>
-<hr>
-
 
 <!-- Pager -->
 
 
+<!-- 分类 -->
 
+    2222222222222222222222222222222222222222222222222222222222
+	<h2>spring</h2>
+	</span>2</span>
+	<ul class="arc-list">
+	    
+		<li>22/10/2015<a href="/spring/spring-web-flow-action.html">pring WeB Flow　实战</a></li>
+	    
+		<li>22/10/2015<a href="/spring/spring-web-flow.html">Spring WeB Flow初识</a></li>
+	    
+	</ul>
+
+ 33333333333333333333333333333333333333333333333
 
     		</div>
     <!-- Sidebar Container -->

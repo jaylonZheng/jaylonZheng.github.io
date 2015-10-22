@@ -19,7 +19,9 @@
 <!-- Migrate from head to bottom, no longer block render and still work -->
 
 
-
+<div id="back-top">
+  <a href="#top" title="回到顶部"></a>
+</div>
 </body>
 
 </html>

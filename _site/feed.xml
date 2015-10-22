@@ -5,433 +5,194 @@
     <description>郑江龙的技术私房菜 | 郑江龙，Web &amp; Java，linux | 这里是 @入镜繁华 的个人博客，与你一起发现更大的世界。</description>
     <link>http://jaylonZheng.github.io/</link>
     <atom:link href="http://jaylonZheng.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 22 Oct 2015 20:29:29 +0800</pubDate>
-    <lastBuildDate>Thu, 22 Oct 2015 20:29:29 +0800</lastBuildDate>
+    <pubDate>Fri, 23 Oct 2015 00:28:50 +0800</pubDate>
+    <lastBuildDate>Fri, 23 Oct 2015 00:28:50 +0800</lastBuildDate>
     <generator>Jekyll v1.4.2</generator>
     
       <item>
-        <title>JavaScript 模块化七日谈55</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;下滑这里查看更多内容&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;7月9日，我在公司内部进行了名为「JavaScript 模块化七日谈」分享，并将该 Slides 分享到了微博上。出乎意料地，这篇微博先后被 @JS小组 @尤小右 @寸志 等近 200 人转发，阅读达到 10w，获得了还不错的评价。&lt;/p&gt;
-
-&lt;p&gt;于是，我决定将它重新发到我的博客上，并为它专门制作了适用于 Keynote 展示文稿的新布局。它能自动根据屏幕大小/旋转以一定比例填充屏幕，你也可以直接点击下方链接在新页面打开，来获得更好的、沉浸式的全屏体验&lt;/p&gt;
-
-&lt;h3 id=&quot;watch-slides-httphuangxuanmejs-module-7day&quot;&gt;&lt;a href=&quot;http://huangxuan.me/js-module-7day&quot;&gt;Watch Slides →&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://huangxuan.me/js-module-7day/attach/qrcode.png&quot; width=&quot;350&quot; height=&quot;350&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;small class=&quot;img-hint&quot;&gt;你也可以通过扫描二维码在手机上观看&lt;/small&gt;&lt;/p&gt;
-
-&lt;p&gt;这个 Web Slides 开源在&lt;a href=&quot;https://github.com/Huxpro/js-module-7day&quot;&gt;我的 Github 上&lt;/a&gt;，欢迎你帮助我完善这个展示文稿，你可以给我提 issue，可以 fork &amp;amp; pull request。如果它能帮助到你了，希望你还能不吝啬 star 一下这个项目&lt;/p&gt;
-
-&lt;h3 id=&quot;catalog&quot;&gt;Catalog&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;第一日 上古时期 &lt;strong&gt;&lt;em&gt;Module?&lt;/em&gt;&lt;/strong&gt; 从设计模式说起&lt;/li&gt;
-  &lt;li&gt;第二日 石器时代 &lt;strong&gt;&lt;em&gt;Script Loader&lt;/em&gt;&lt;/strong&gt; 只有封装性可不够，我们还需要加载&lt;/li&gt;
-  &lt;li&gt;第三日 蒸汽朋克 &lt;strong&gt;&lt;em&gt;Module Loader&lt;/em&gt;&lt;/strong&gt; 模块化架构的工业革命&lt;/li&gt;
-  &lt;li&gt;第四日 号角吹响 &lt;strong&gt;&lt;em&gt;CommonJS&lt;/em&gt;&lt;/strong&gt; 征服世界的第一步是跳出浏览器&lt;/li&gt;
-  &lt;li&gt;第五日 双塔奇兵 &lt;strong&gt;&lt;em&gt;AMD/CMD&lt;/em&gt;&lt;/strong&gt; 浏览器环境模块化方案&lt;/li&gt;
-  &lt;li&gt;第六日 精灵宝钻 &lt;strong&gt;&lt;em&gt;Browserify/Webpack&lt;/em&gt;&lt;/strong&gt; 大势所趋，去掉这层包裹！&lt;/li&gt;
-  &lt;li&gt;第七日 王者归来 &lt;strong&gt;&lt;em&gt;ES6 Module&lt;/em&gt;&lt;/strong&gt; 最后的战役&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;thanks&quot;&gt;Thanks&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://lab.hakim.se/reveal-js&quot;&gt;Reveal.js&lt;/a&gt;&lt;/p&gt;
+        <title>pring WeB Flow　实战</title>
+        <description>&lt;p&gt;sd dfasdf&lt;/p&gt;
 </description>
-        <pubDate>Thu, 09 Jul 2015 00:00:00 +0800</pubDate>
-        <link>http://jaylonZheng.github.io/demo/2015/07/09/js-module-7day/</link>
-        <guid isPermaLink="true">http://jaylonZheng.github.io/demo/2015/07/09/js-module-7day/</guid>
+        <pubDate>Thu, 22 Oct 2015 20:31:00 -0000</pubDate>
+        <link>http://jaylonZheng.github.io/spring/spring-web-flow-action.html</link>
+        <guid isPermaLink="true">http://jaylonZheng.github.io/spring/spring-web-flow-action.html</guid>
         
-        <category>前端开发</category>
+        <category>Spring</category>
         
-        <category>JavaScript</category>
+        <category>Java</category>
         
         
-        <category>demo</category>
+        <category>spring</category>
         
       </item>
     
       <item>
-        <title>Unix/Linux 扫盲笔记</title>
+        <title>Spring WeB Flow初识</title>
         <description>&lt;blockquote&gt;
-  &lt;p&gt;This document is not completed and will be updated anytime.&lt;/p&gt;
+  &lt;p&gt;本博文主要讲如何Spring WeB Flow的原理以及如何使用&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&quot;catagory&quot;&gt;Catagory&lt;/h2&gt;
+&lt;h2 id=&quot;section&quot;&gt;1背景介绍&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;1.1背景&lt;/h3&gt;
+&lt;p&gt;平时中我们尝具有一些流程化的操作，如上网购物时，一般时选中物品–&amp;gt;加入购物车–&amp;gt;提交订单–&amp;gt;付款．在spring里就专门为这种流程化操作提供一个Web框架,Spring  Web Flow，它时Spring的一个子项目，并不属于Spring的一部分. Spring Web Flow能够很好的将流程的定义，实现流程的行为及视图分开，进行解耦．而strust２的流程定义很难做到流程定义和实现行为分开，而且其流程定义的比较散散乱，一般时将流程定义在实现中，即在action内部通过判断条件进行流程跳转．strust２的流程流程可读性差．&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;1.2原理介绍&lt;/h3&gt;
+
+&lt;p&gt;需要声明的是Spring  Web Flow　的构建时基于SpringMVC之上的，所以所有的流程都是由SpringMVC的DispatcherServlet负责管理和转发．但DispatcherServlet并不能直接知道流程请求和流程行为的对应关系，和bean使用一样，流程需要定义，加载，注册和执行．Spring Web Flow的工作是通过&lt;strong&gt;配置流程注册表&lt;/strong&gt;将应用中定义的流程进行加载并注册，当用户进入一个流程时,通过装配了流程注册表引用的FlowHanderMapping查找用户请求URL的对应流程，再通过FlowHandlerAdapter相应该流程请求．FlowHandlerAdapter配置了一个流程执行器，可以执行流程请求．&lt;/p&gt;
+
+&lt;p&gt;上面说的流程是处理一个事情的步骤，&lt;strong&gt;流程由三个主要元定义的：状态，转移和流程数据．&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;状态&lt;/strong&gt;：流程中事件发生的地点．&lt;br /&gt;
+&lt;strong&gt;转移&lt;/strong&gt;：连接状态的线，从一个状态转到另一个状态．&lt;br /&gt;
+&lt;strong&gt;数据&lt;/strong&gt;：流程在执行和转移时携带的数据．&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;2.相关概念及配置&lt;/h2&gt;
+
+&lt;p&gt;接下来我们进行一些配置，包括jar,注册表配置，执行器配置，处理请求配置等．&lt;/p&gt;
+
+&lt;h3 id=&quot;spring-web-flow&quot;&gt;2.1.Spring Web Flow的相关包&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;org.springframe.binding-x.x.x.RELEASE.jar&lt;br /&gt;
+org.springframe.faces-x.x.x.RELEASE.jar&lt;br /&gt;
+org.springframe.js-x.x.x.RELEASE.jar&lt;br /&gt;
+org.springframe.js.resources-x.x.x.RELEASE.jar&lt;br /&gt;
+org.springframe.webflow-x.x.x.RELEASE.jar&lt;br /&gt;
+在本例中质押binding和webflow&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;2.2配置流程注册表&lt;/h3&gt;
+&lt;p&gt;注册表的主要工作时负责流程的定义查找，加载和注册，&lt;strong&gt;不负责创建和执行&lt;/strong&gt;．注册好的流程提供给执行器，是执行器能够查找并使用这些流程．&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;flow:flow-registry id=&quot;flowRegistry&quot; base-path=&quot;/WEB-INF/flows&quot;&amp;gt;
+　　　　&amp;lt;flow:flow-location-pattern value=&quot;*-flow.xml&quot; /&amp;gt;
+&amp;lt;flow:flow-registry&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这里定义了流程注册表flowRegistry，指定了流程定义的文件位置在/WEB-INF/flows下，并且文件名字以-flow.xml.注册表将匹配的所有文件加载，并注册这些流程．&lt;br /&gt;
+ 当然也可以通过flow-location-pattern指定文件名字来加载,还可以为该流程设置具体的ID．&lt;/p&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;2.3织入流程执行器&lt;/h3&gt;
+&lt;p&gt;主要负责驱动流程的执行．当用户进入一个流程时，流程执行器就会为用户创建并启动一个流程．&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;flow:flow executor id=&quot;flowExecutor&quot; flow-refistry=&quot;flowRegistry&quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-6&quot;&gt;2.4 处理流程请求&lt;/h3&gt;
+&lt;p&gt;配置FlowHandlerMapping&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;bean class=&quot;org.springframework.webflow.mvc.servlet.FlowHandlerMapping&quot;&amp;gt;
+	&amp;lt;property name=&quot;flowRegistry&quot; ref=&quot;flowRegistry&quot; /&amp;gt;
+&amp;lt;/bean&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;配置FlowHandlerAdapter&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;bean class=&quot;org.springframework.webflow.mvc.servlet.FlowHandlerAdapter&quot;&amp;gt;
+ 	&amp;lt;property name=&quot;flowExecutor&quot; ref=&quot;flowExecutor&quot; /&amp;gt;
+&amp;lt;/bean&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;section-7&quot;&gt;2.5 流程组件&lt;/h3&gt;
+
+&lt;h4 id=&quot;section-8&quot;&gt;2.5.1 状态&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;状态包括是行为(action),决策(decision),结束(end),子流程(subflow)或视图(view)类型．&lt;/strong&gt;&lt;br /&gt;
+  1)视图(view)：为用户展现信息，支持任意视图类型．&lt;br /&gt;
+有３种写法&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  1. &amp;lt; view-state id=&quot;welcome&quot;/&amp;gt;  id对应流程内标状态和试图名称
+  2. &amp;lt; view-state id=&quot;welcome&quot; view=&quot;greeting&quot;/&amp;gt;　
+  3. &amp;lt; view-state id=&quot;takePlayment&quot; model=&quot;flowScope.paymentDetails&quot;&amp;gt; 绑定流程范围的paymentDetails对像
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2)行为状态&lt;br /&gt;
+行为状态是应用程序自身执行的任务，可以理解为方法调用，根据调用结果转移状态．&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;action-state id=&quot;saveOrder&quot; 
+	&amp;lt;evaluate expression=&quot;pizzaFlowActions.saveOrder(order)&quot;/&amp;gt;
+&amp;lt;/action-state&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;pizzaFlowActions是指某个bean ID&lt;br /&gt;
+  3)决策状态&lt;br /&gt;
+通过条件判断决定转移．&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;decision-state id=&quot;checkDeliverArea&quot; &amp;gt;
+	&amp;lt;if test=&quot;pizzaFlowActions.checkDeliveryArea(customer.zipCode)&quot;
+	then=&quot;addCustomer&quot;
+	else=&quot;deliveryWarning&quot; /&amp;gt;
+&amp;lt;/decision-state&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;4)子流程状态&lt;br /&gt;
+运行一个正在执行的流程调用另一个流程．类似于一个方法调用另一个方法&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;subflow-state id=&quot;order&quot; subflow=&quot;pizaa/order&quot;
+    &amp;lt;input name=&quot;order&quot; value=&quot;order&quot; /&amp;gt;
+    &amp;lt;transition on=&quot;orderCreated&quot; to=&quot;payment&quot;&amp;gt;
+&amp;lt;/subflow-state&amp;gt;
+＂&amp;lt; input &amp;gt;＂ 是作为子流程的输入．
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;５)结束状态&lt;br /&gt;
+	&lt;end-state id=&quot;customerReady&quot;&gt;&lt;/end-state&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;section-9&quot;&gt;2.5.2转移&lt;/h4&gt;
+&lt;p&gt;局部转移，在某个状态下适用&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt; transition to=&quot;&quot;&amp;gt;:从当前状态转移到to对应的状态
+&amp;lt; transition on=&quot;&quot; to=&quot;&quot;&amp;gt; ：如果触发了on对应的事件，则跳到to事件
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;全局转移，所有状态都可以&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt; global-transitions&amp;gt;
+     &amp;lt; transition on=&quot;&quot; to=&quot;&quot; /&amp;gt;
+&amp;lt; /global-transitions&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;section-10&quot;&gt;2.5.3数据&lt;/h4&gt;
+&lt;p&gt;１.声明变量包含3种&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt; var name=&quot;&quot; class=&quot;&quot;&amp;gt;
+&amp;lt; evaluate result=&quot;&quot; expression=&quot;&quot;&amp;gt;　expression中可以用ＳpEL．
+&amp;lt;set name=&quot;&quot; value=&quot; &quot;  &amp;gt;value可以用ＳpEL．
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;２．作用域&lt;br /&gt;
+- Conversation:最高层级的流程开始创建时创建，在最高层级的流程结束时销毁．最高层级流程与其子进程共享&lt;br /&gt;
+- Flow: 流程&lt;strong&gt;开始创建&lt;/strong&gt;时创建，在流程销毁时销毁．&lt;br /&gt;
+- Request:当请求&lt;strong&gt;进入&lt;/strong&gt;流程时创建，在流程返回时销毁&lt;br /&gt;
+- Flash：当流程&lt;strong&gt;开始创建&lt;/strong&gt;时创建，在流程销毁时销毁．在视图状态渲染后它也会销毁．&lt;br /&gt;
+- View:进入&lt;strong&gt;视图&lt;/strong&gt;状态时创建，退出这个状态时销毁．&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;var 始终时流程作用域&lt;br /&gt;
+set 和 evaluate通过name 和result属性前缀指定作用域&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-11&quot;&gt;小结&lt;/h2&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;#unix&quot;&gt;Unix&lt;/a&gt;
-    &lt;ol&gt;
-      &lt;li&gt;&lt;a href=&quot;#bell-labs&quot;&gt;Bell Labs&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#xenix&quot;&gt;Xenix&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#bsd&quot;&gt;BSD&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#freebsd--apple&quot;&gt;FreeBSD &amp;amp; Apple&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#nextstep&quot;&gt;NeXTStep&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#darwin&quot;&gt;Darwin&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#posix&quot;&gt;POSIX&lt;/a&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#unix-like&quot;&gt;Unix-like&lt;/a&gt;
-    &lt;ol&gt;
-      &lt;li&gt;&lt;a href=&quot;#single-unix-specification&quot;&gt;Single Unix Specification&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#apple-ios&quot;&gt;Apple iOS&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#xnu-kernel&quot;&gt;XNU Kernel&lt;/a&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#linux&quot;&gt;Linux&lt;/a&gt;
-    &lt;ol&gt;
-      &lt;li&gt;&lt;a href=&quot;#linux-kernel&quot;&gt;Linux Kernel&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#gnu-project&quot;&gt;GNU Project&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#android&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#android-kernel&quot;&gt;Android Kernel&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#android-rom&quot;&gt;Android ROM&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#chrome-os&quot;&gt;Chrome OS&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#chromium-os&quot;&gt;Chromium OS&lt;/a&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Spring Web Flow主要用于流程编程，实现了流程定义，流程行为和视图解耦．&lt;/li&gt;
+  &lt;li&gt;Spring　Web　Flow在springMVC基础上创立． 需要DisptacherFilter分配&lt;/li&gt;
+  &lt;li&gt;整个流程是流程注册表查找，加载和注册流程定义．FlowHandlerMapping根据用户请求查找URL对应流程，并使用FlowHandlerAdapter执行．&lt;/li&gt;
+  &lt;li&gt;流程由三个主要元定义的：状态，转移和流程数据．&lt;/li&gt;
+  &lt;li&gt;状态包括是行为(action),决策(decision),结束(end),子流程(subflow)或视图(view)类型&lt;/li&gt;
+  &lt;li&gt;转移分为局部和全局，共三种配置方法&lt;/li&gt;
+  &lt;li&gt;数据作用域有５种:Flow,Conversation,Ｒequest,Flash,View&lt;/li&gt;
 &lt;/ol&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;unix&quot;&gt;Unix&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Unix is a &lt;strong&gt;family&lt;/strong&gt; of multitasking, multiuser computer OS.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Derive from the original &lt;strong&gt;AT&amp;amp;T Unix&lt;/strong&gt;, Developed in the 1970s at &lt;strong&gt;Bell Labs&lt;/strong&gt; (贝尔实验室), initially intended for use inside the &lt;strong&gt;Bell System&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;bell-labs&quot;&gt;Bell Labs&lt;/h4&gt;
-    &lt;p&gt;Bell 和 AT&amp;amp;A 在那时已经是一家了，可以看到那时的通信公司真是一线 IT 公司呢。 &lt;br /&gt;
-&lt;strong&gt;C 语言也是 Bell Labs 的产物&lt;/strong&gt;，从一开始就是为了用于 Unix 而设计出来的。所以 Unix （在 73 年用 C 重写）在高校流行后，C 语言也获得了广泛支持。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;AT&amp;amp;T licensed Unix to outside parties(第三方) from the late 1970s, leading to a variety of both &lt;strong&gt;academic&lt;/strong&gt; (最有有名的 BSD ) and &lt;strong&gt;commercial&lt;/strong&gt; (Microsoft Xenix, IBM AIX, SunOS Solaris)&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;xenix&quot;&gt;Xenix&lt;/h4&gt;
-    &lt;p&gt;微软 1979 年从 AT&amp;amp;A 授权来的 Unix OS，配合着 x86 成为当时最受欢迎的 Unix 发行版。后来 M$ 和 IBM 合作开发 OS/2 操作系统后放弃，后来最终转向 &lt;strong&gt;Windows NT&lt;/strong&gt;。&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;bsd&quot;&gt;BSD&lt;/h4&gt;
-    &lt;p&gt;&lt;strong&gt;Barkeley Software Distribution&lt;/strong&gt;, also called Berkeley Unix. Today the term “BSD” is used to refer to any of the BSD descendants(后代) which together form a branch of the family of Unix-like OS.(共同组成了一个分支)&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;strong&gt;BSD 最大的贡献是在 BSD 中率先增加了虚拟存储器和 Internet 协议&lt;/strong&gt;，其 TCP/IP(IPv4 only) 代码仍然在现代 OS 上使用（ Microsoft Windows and most of the foundation of Apple’s OS X and iOS ）&lt;/li&gt;
-      &lt;li&gt;BSD 后来发展出了众多开源后代，包括 FreeBSD, OpenBSD, NetBSD 等等……很多闭源的 vendor Unix 也都从 BSD 衍生而来。&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;freebsd--apple&quot;&gt;FreeBSD &amp;amp; Apple&lt;/h4&gt;
-    &lt;p&gt;FreeBSD 不但是 Open Source BSD 中占有率最高的，还直接影响了 Apple Inc : NeXT Computer 的团队在 FreeBSD 上衍生出了 NeXTSTEP 操作系统，这货后来在 Apple 时期演化成了 &lt;strong&gt;Darwin&lt;/strong&gt; ，这个“达尔文”居然还是个开源系统，而且是 the Core of &lt;strong&gt;Mac OS X&lt;/strong&gt; and &lt;strong&gt;iOS&lt;/strong&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;nextstep&quot;&gt;NeXTSTEP&lt;/h4&gt;
-    &lt;p&gt;An &lt;strong&gt;object-oriented&lt;/strong&gt;, multitasking OS. Low-level C but High-level OC language and runtime the first time, combined with an &lt;strong&gt;OO aplication layer&lt;/strong&gt; and including several “kits”.    &lt;br /&gt;
-大家都知道 NeXT 是 Steve Jobs 被 forced out of Apple 后和 a few of his coworkers 创办的，所以 &lt;strong&gt;NeXTSTEP 绝对是证明 Jobs 实力的作品。&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;darwin&quot;&gt;Darwin&lt;/h4&gt;
-    &lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Darwin_(operating_system\)&quot;&gt;Darwin&lt;/a&gt;, the core set of components upon which Mac OS X and iOS based, mostly POSIX compatible, but has never, by itself, been certified as being compatible with any version of &lt;strong&gt;POSIX&lt;/strong&gt;. (OS X, since Leopard, has been certified as compatible with the Single UNIX Specification version 3)  &lt;br /&gt;
-&lt;strong&gt;所以说 Mac OS X 算是很正统 Unix 的了&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;h4 id=&quot;posix&quot;&gt;POSIX&lt;/h4&gt;
-    &lt;p&gt;可移植操作系统接口, Portable Operating System Interface, is a family of standards specified by the IEEE from maintaining compatibility between OS, defines the API along with Command Line Shells and utility interfaces, for software comaptibility with variants of Unix and other OS.&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Fully POSIX compliant:
-        &lt;ul&gt;
-          &lt;li&gt;OS X&lt;/li&gt;
-          &lt;li&gt;QNX OS (BlackBerry)&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Mostly complicant:
-        &lt;ul&gt;
-          &lt;li&gt;Linux&lt;/li&gt;
-          &lt;li&gt;OpenBSD/FreeBSD&lt;/li&gt;
-          &lt;li&gt;Darwin (Core of &lt;strong&gt;iOS&lt;/strong&gt; &amp;amp; OS X)&lt;/li&gt;
-          &lt;li&gt;&lt;strong&gt;Android&lt;/strong&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Complicant via compatibility feature （通过兼容功能实现兼容）
-        &lt;ul&gt;
-          &lt;li&gt;Windows NT Kernel
-            &lt;ul&gt;
-              &lt;li&gt;Windows Server 2000, 2003, 2008, 2008 R2, 2012&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;Symbian OS (with PIPS)
-            &lt;ul&gt;
-              &lt;li&gt;Symbian was a closed-source OS.&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;unix-like&quot;&gt;Unix-like&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;A Unix-like (sometimes referred to as UN*X or *nix) operating system is one that behaves in a manner similar to a Unix system, while not necessarily conforming to or being certified to any version of the &lt;strong&gt;Single UNIX Specification&lt;/strong&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;There is no standard for defining the term.  &lt;br /&gt;
-其实 Unix-like 是个相对模糊的概念：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;最狭义的 Unix 单指 Bell Labs’s Unix&lt;/li&gt;
-  &lt;li&gt;稍广义的 Unix 指代所有 Licensed Unix, 即通过了 SUS 的 Unix-like ，比如 OS X&lt;/li&gt;
-  &lt;li&gt;最广义的 Unix 即所有 Unix-like 系统，无论它是否通过过任何 SUS，包括 Linux，BSD Family 等&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;single-unix-specification&quot;&gt;Single UNIX Specification&lt;/h4&gt;
-&lt;p&gt;The Single UNIX Specification (SUS) is the collective name of a family of standards for computer OS, compliance with which is required to &lt;strong&gt;qualify for the name “Unix”&lt;/strong&gt;, like &lt;strong&gt;POSIX&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h4 id=&quot;apple-ios&quot;&gt;Apple iOS&lt;/h4&gt;
-&lt;p&gt;iOS is a &lt;strong&gt;Unix-like OS based on Darwin(BSD)&lt;/strong&gt; and OS X, which share some frameworks including Core Foundation, Founadtion and the Darwin foundation with OS X, but, Unix-like shell access is not avaliable for users and restricted for apps, &lt;strong&gt;making iOS not fully Unix-compatible either.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The iOS kernal is &lt;strong&gt;XNU&lt;/strong&gt;, the kernal of Darwin.&lt;/p&gt;
-
-&lt;h4 id=&quot;xnu-kernel&quot;&gt;XNU Kernel&lt;/h4&gt;
-&lt;p&gt;XNU, the acronym(首字母缩写) for &lt;strong&gt;&lt;em&gt;X is Not Unix&lt;/em&gt;&lt;/strong&gt;, which is the &lt;strong&gt;Computer OS Kernel&lt;/strong&gt; developed at Apple Inc since Dec 1996 for use in the Mac OS X and released as free open source software as part of Darwin.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;linux&quot;&gt;Linux&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Linux is a Unix-like and mostly POSIX-compliant computer OS.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Unix_timeline.en.svg/800px-Unix_timeline.en.svg.png&quot; alt=&quot;Unix_timeline&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;linux-kernel&quot;&gt;Linux Kernel&lt;/h4&gt;
-
-&lt;p&gt;严格来讲，术语 Linux 只表示 &lt;a href=&quot;http://en.wikipedia.org/wiki/Linux_kernel&quot;&gt;Linux Kernel&lt;/a&gt; 操作系统内核本身，比如说 Android is Based on Linux (Kernel). Linus 编写的也只是这一部分，一个免费的 Unix-like Kernel，并不属于 GNU Project 的一部分。&lt;/p&gt;
-
-&lt;p&gt;但通常把 Linux 作为 Linux Kernel 与大量配合使用的 GNU Project Software Kit (包括 Bash, Lib, Compiler, 以及后期的 GUI etc) 所组合成的 OS 的统称。（包括各类 Distribution 发行版）&lt;/p&gt;
-
-&lt;p&gt;这类操作系统也被称为 &lt;strong&gt;GNU/Linux&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;gnu-project&quot;&gt;GNU Project&lt;/h4&gt;
-
-&lt;p&gt;The GNU Project is a &lt;strong&gt;free software, mass collaboration&lt;/strong&gt; project, which based on the following freedom rights:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Users are free to run the software, share (copy, distribute), study and modify it.&lt;/li&gt;
-  &lt;li&gt;GNU software guarantees these freedom-rights legally (via its license).&lt;/li&gt;
-  &lt;li&gt;So it is not only FREE but, more important, FREEDOM.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In order to ensure that the &lt;em&gt;entire&lt;/em&gt; software of a computer grants its users all freedom rights (use, share, study, modify), even the most fundamental and important part, &lt;strong&gt;the operating system&lt;/strong&gt;, needed to be written.&lt;/p&gt;
-
-&lt;p&gt;This OS is decided to called &lt;strong&gt;GNU (a recursive acronym meaning “GNU is not Unix”)&lt;/strong&gt;. By 1992, the GNU Project had completed all of the major OS components except for their kernel, &lt;em&gt;GNU Hurd&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;With the release of the third-party &lt;strong&gt;Linux Kernel&lt;/strong&gt;, started independently by &lt;em&gt;Linus Torvalds&lt;/em&gt; in 1991 and released under the GPLv0.12 in 1992, for the first time it was possible to run an OS &lt;strong&gt;composed completely of free software&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Though the Linux kernel is not part of the GNU project, it was developed using GCC and other GNU programming tools and was released as free software under the GPL.&lt;/p&gt;
-
-&lt;p&gt;Anyway, there eventually comes to the &lt;strong&gt;GNU/Linux&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;GPL&lt;/strong&gt;: GNU General Public License&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;GCC&lt;/strong&gt;: GNU Compiler Collection&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;其他与 GPL 相关的自由/开源软件公共许可证：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Mozilla_Public_License&quot;&gt;Mozilla Public License&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/MIT_License&quot;&gt;MIT License&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/BSD_licenses&quot;&gt;BSD Public License&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;GPL 强制后续版本必须是自由软件，而 BSD 的后续可以选择继续开源或者封闭&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Apache_License&quot;&gt;Apache License&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://dl2.iteye.com/upload/attachment/0047/4142/d770c85a-49b7-3c7f-8ae2-cbb6451e00d8.png&quot; alt=&quot;Public License&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;android&quot;&gt;Android&lt;/h4&gt;
-
-&lt;p&gt;Android is a mobile OS based on &lt;strong&gt;Linux Kernel&lt;/strong&gt;, so it’s definitely &lt;strong&gt;Unix-like&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Linux is under GPL so Android has to be open source&lt;/strong&gt;. &lt;br /&gt;
-Android’s source code is released by Google under open source licenses, although most Android devices ultimately ship with a combination of open source and proprietary software, including proprietary software developed and licensed by Google &lt;em&gt;(GMS are all proprietary)&lt;/em&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;android-kernel&quot;&gt;Android Kernel&lt;/h4&gt;
-
-&lt;p&gt;Android’s kernel is based on one of the Linux kernel’s long-term support (LTS) branches.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Android’s variant of the Linux kernel&lt;/strong&gt; has further architectural changes that are implemented by Google outside the typical Linux kernel development cycle, and, certain features that Google contributed back to the Linux kernel. Google maintains a public code repo that contains their experimental work to re-base Android off the latest stable Linux versions.&lt;/p&gt;
-
-&lt;p&gt;Android Kernel 大概是 Linux Kernel 最得意的分支了，Android 也是 Linux 最流行的发行版。不过，也有一些 Google 工程师认为 Android is not Linux in the traditional Unix-like Linux distribution sense. 总之这类东西就算有各种协议也还是很难说清楚，在我理解里 Android Kernel 大概就是 fork Linux Kernel 之后改动和定制比较深的例子。&lt;/p&gt;
-
-&lt;h4 id=&quot;android-rom&quot;&gt;Android ROM&lt;/h4&gt;
-
-&lt;p&gt;既然提到 Android 就不得不提提 Android ROM&lt;/p&gt;
-
-&lt;p&gt;ROM 的本义实际上是只读内存：&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Read-only memory&lt;/strong&gt; (ROM) is a class of storage medium used in computers and other electronic devices. Data stored in ROM can only be modified slowly, with difficulty, or not at all, so it is &lt;strong&gt;mainly used to distribute firmware (固件)&lt;/strong&gt; (software that is very closely tied to specific hardware, and unlikely to need frequent updates).&lt;/p&gt;
-
-&lt;p&gt;ROM 在发展的过程中不断进化，从只读演变成了可编程可擦除，并最终演化成了 Flash&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;PROM (Programmable read-only memory)&lt;/li&gt;
-  &lt;li&gt;EPROM (Erasable programmable read-only memory)&lt;/li&gt;
-  &lt;li&gt;EEPROM (Electrically erasable programmable read-only memory)
-    &lt;ul&gt;
-      &lt;li&gt;Flash memory (闪存)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Flash 的出现是历史性的，它不但可以作为 ROM 使用，又因其极高的读写速度和稳定性，先后发展成为U盘（USB flash drives）、移动设备主要内置存储，和虐机械硬盘几条街的固态硬盘（SSD），可以说这货基本统一了高端存储市场的技术规格。&lt;/p&gt;
-
-&lt;p&gt;所以我们平时习惯说的 ROM 其实还是来源于老单片机时代，那时的 ROM 真的是写了就很难（需要上电复位）、甚至无法修改，所以那时往 ROM 里烧下去的程序就被称作 firmware ，固件。久而久之，虽然技术发展了，固件仍然指代那些不常需要更新的软件，而 ROM 这个词也就这么沿用下来了。&lt;/p&gt;
-
-&lt;p&gt;所以在 wiki 里是没有 Android ROM 这个词条的，只有 &lt;a href=&quot;http://en.wikipedia.org/wiki/List_of_custom_Android_firmwares&quot;&gt;List of custom Android firmwares&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;A custom firmware, also known as a custom ROM, ROM, or custom OS, is an aftermarket distribution of the Android operating system. They are based on the Android Open Source Project (AOSP), hence most are open-sourced releases, unlike proprietary modifications by device manufacturers.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;各类 Android ROM 在 Android 词类下也都是属于 &lt;strong&gt;Forks and distributions&lt;/strong&gt; 一类的。&lt;/p&gt;
-
-&lt;p&gt;所以我说，其实各类 Android ROM 也好，fork Android 之流的 YunOS、FireOS 也好，改了多少东西，碰到多深的 codebase ……&lt;strong&gt;其实 ROM 和 Distribution OS 的界限是很模糊的&lt;/strong&gt;，为什么 Android 就不可以是移动时代的 Linux ，为什么 Devlik/ART 就不能是移动时代的 GCC 呢？&lt;/p&gt;
-
-&lt;h4 id=&quot;chrome-os&quot;&gt;Chrome OS&lt;/h4&gt;
-
-&lt;p&gt;Chrome OS is an operating system based on the &lt;strong&gt;Linux kernel&lt;/strong&gt; and designed by Google to work with web applications and installed applications.&lt;/p&gt;
-
-&lt;p&gt;虽然目前只是个 Web Thin Client OS ，但是 RoadMap 非常酷……&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Chrome Packaged Application&lt;/strong&gt; (Support working offline and installed)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Android App Runtime&lt;/strong&gt; (run Android applications natively…fxxking awesome)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;平复一下激动的心情，还是回到正题来：&lt;/p&gt;
-
-&lt;h4 id=&quot;chromium-os&quot;&gt;Chromium OS&lt;/h4&gt;
-
-&lt;p&gt;Chrome OS is based on Chromium OS, which is the open-source development version of Chrome OS, which is a &lt;strong&gt;Linux distribution&lt;/strong&gt; designed by Google.&lt;/p&gt;
-
-&lt;p&gt;For Detail, Chromium OS based on &lt;a href=&quot;http://en.wikipedia.org/wiki/Gentoo_Linux&quot;&gt;Gentoo Linux&lt;/a&gt;, emm…&lt;/p&gt;
-
 </description>
-        <pubDate>Tue, 14 Apr 2015 00:00:00 +0800</pubDate>
-        <link>http://jaylonZheng.github.io/2015/04/14/unix-linux-note/</link>
-        <guid isPermaLink="true">http://jaylonZheng.github.io/2015/04/14/unix-linux-note/</guid>
+        <pubDate>Thu, 22 Oct 2015 20:31:00 -0000</pubDate>
+        <link>http://jaylonZheng.github.io/spring/spring-web-flow.html</link>
+        <guid isPermaLink="true">http://jaylonZheng.github.io/spring/spring-web-flow.html</guid>
         
-        <category>OS</category>
+        <category>Spring</category>
         
-        <category>Unix</category>
-        
-        <category>Linux</category>
+        <category>Java</category>
         
         
-      </item>
-    
-      <item>
-        <title>Hello 2015</title>
-        <description>&lt;p&gt;asdfasdfs&lt;/p&gt;
-</description>
-        <pubDate>Thu, 29 Jan 2015 12:00:00 -0000</pubDate>
-        <link>http://jaylonZheng.github.io/2015/01/29/spping/</link>
-        <guid isPermaLink="true">http://jaylonZheng.github.io/2015/01/29/spping/</guid>
-        
-        <category>Life</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>「知乎」为什么阿里系软件体验都不好？</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;这篇文章转载自&lt;a href=&quot;http://www.zhihu.com/question/25657351/answer/31278511&quot;&gt;我在知乎上的回答&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div&gt;
-    &lt;br /&gt;
-    &lt;br /&gt;&lt;b&gt;一言以蔽之，优先级。&lt;/b&gt;
-    &lt;br /&gt;这个优先级并不是由谁或者哪个Boss定的，而是&lt;b&gt;长期的市场竞争和业务需求下的结果&lt;/b&gt;
-    &lt;br /&gt;
-    &lt;br /&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;为什么企鹅家的App用户体验较好？&lt;/b&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-    企鹅家的主力产品，QQ、微信、QQ音乐、QQ空间 等，多是IM（即时通讯）、SNS（社交网络）、数字娱乐 等形态的产品。
-    &lt;br /&gt;
-    &lt;br /&gt;&lt;b&gt;这类产品往往必须「直接依靠优秀的产品服务与用户体验」来赢得用户。&lt;/b&gt;
-    &lt;br /&gt;
-    &lt;br /&gt;如果这点做不好，产品就无法在竞争中脱颖而出。这也使得在企鹅内部，&lt;b&gt;围绕这部分的要求，需求，反馈 &lt;/b&gt;&lt;b&gt;都一定最多，使得企鹅不得不把这部分做好&lt;/b&gt;。
-    &lt;br /&gt;
-    &lt;br /&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;那为什么阿里系的App用户体验较差？&lt;/b&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-    阿里系的主力产品，从1688、淘宝、再到支付宝、天猫、淘宝旅行、淘点点、一淘、旺旺，要么是电商类产品，要么就是电商类的延伸产品。
-    &lt;br /&gt;
-    &lt;br /&gt;而这类产品的核心竞争力（或者说要做好的难处），往往在&lt;b&gt;「如何与实体经济，甚至政府 打交道」、&lt;/b&gt;&lt;b&gt;「如何做好运营」，&lt;/b&gt;而非优秀的用户体验。
-    &lt;br /&gt;
-    &lt;br /&gt;应该说，阿里从来都不是不重视用户体验，这两年更是愈发重视。但是因为身处这样的市场环境，&lt;b&gt;阿里必须先完成这些优先级更高的需求（海量的业务，运营需求）以抢占市场，&lt;/b&gt;
-    &lt;br /&gt;这才导致阿里内部无法有太多精力focus到客户端体验上。
-    &lt;br /&gt;
-    &lt;br /&gt;
-    &lt;br /&gt;
-    &lt;br /&gt;上面就算基本回答了题主的问题，
-    &lt;br /&gt;不过，知乎惯例，多说几句：
-    &lt;br /&gt;
-    &lt;br /&gt;&lt;b&gt;其实，上面的答案，也可以说这都是说辞。&lt;/b&gt;
-    &lt;br /&gt;
-    &lt;br /&gt;在我刚刚加入阿里的时候，我也一度纳闷甚至郁闷这个事。直到我开始接触更多的项目，我才能逐渐理解「为什么会这样」。
-    &lt;br /&gt;
-    &lt;br /&gt;&lt;b&gt;但是，这并不足以成为借口。&lt;/b&gt;
-    &lt;br /&gt;&lt;b&gt;该不该改？ 当然该改。&lt;/b&gt;
-    &lt;br /&gt;
-    &lt;br /&gt;我相信几乎所有阿里人，尤其UED，肯定都不希望这样。
-    &lt;br /&gt;只能说，这需要阿里投入更多的人、更多的时间、更多的努力来做好
-    &lt;br /&gt;
-    &lt;br /&gt;
-    &lt;br /&gt;
-    &lt;br /&gt;以上。
-    &lt;br /&gt;
-    &lt;br /&gt;利益相关：
-    &lt;br /&gt;阿里员工
-    &lt;br /&gt;
-    &lt;br /&gt;
-&lt;/div&gt;
-
-</description>
-        <pubDate>Wed, 01 Oct 2014 12:00:00 -0000</pubDate>
-        <link>http://jaylonZheng.github.io/demo/2014/10/01/why-alibaba-ux-sucks/</link>
-        <guid isPermaLink="true">http://jaylonZheng.github.io/demo/2014/10/01/why-alibaba-ux-sucks/</guid>
-        
-        <category>知乎</category>
-        
-        <category>阿里巴巴</category>
-        
-        <category>交互设计</category>
-        
-        
-        <category>demo</category>
+        <category>spring</category>
         
       </item>
     

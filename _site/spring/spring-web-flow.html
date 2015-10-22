@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="郑江龙的技术私房菜 | 郑江龙，Web & Java，linux | 这里是 @入镜繁华 的个人博客，与你一起发现更大的世界。">
+    <meta name="keyword"  content="郑江龙,Joe，郑江龙的博客, 郑江龙　Blog, 博客, 个人网站, 互联网, Java,架构，linux,设计模式,后端,">
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <title>Spring WeB Flow初识 - 郑江龙的博客 | Joe Blog</title>
+
+    <link rel="canonical" href="http://jaylonZheng.github.io/spring/spring-web-flow.html">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+   <script src="/js/jquery.min.js"></script>
+   <script src="/js/jquery.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script>
+</script>
+
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" >
+
+    <!-- Navigation -->
+<div id="top"></div>
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">郑江龙 Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/portfolio/index.html">Portfolio</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/about.html">About Me</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags.html">Tags</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+<!--返回到顶部-->
+ <script>
+$("#back-top").hide();
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() >200) {
+      $('#back-top').fadeIn();
+    } else {
+      $('#back-top').fadeOut();
+    }
+  });
+  $('#back-top a').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+  });
+});
+</script>
+
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/about-bg.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        background-image: url('/img/about-bg.jpg')
+    }
+</style>
+<header class="intro-header" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags.html/#Spring" title="Spring">Spring</a>
+                        
+                        <a class="tag" href="/tags.html/#Java" title="Java">Java</a>
+                        
+                    </div>
+                    <h1>Spring WeB Flow初识</h1>
+                    
+                    
+                    <h2 class="subheading">介绍Spring WeB Flow基本概念和流程</h2>
+                    
+                    <span class="meta">Posted by 郑江龙 on October 22, 2015</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+				<blockquote>
+  <p>本博文主要讲如何Spring WeB Flow的原理以及如何使用</p>
+</blockquote>
+
+<h2 id="section">1背景介绍</h2>
+
+<h3 id="section-1">1.1背景</h3>
+<p>平时中我们尝具有一些流程化的操作，如上网购物时，一般时选中物品–&gt;加入购物车–&gt;提交订单–&gt;付款．在spring里就专门为这种流程化操作提供一个Web框架,Spring  Web Flow，它时Spring的一个子项目，并不属于Spring的一部分. Spring Web Flow能够很好的将流程的定义，实现流程的行为及视图分开，进行解耦．而strust２的流程定义很难做到流程定义和实现行为分开，而且其流程定义的比较散散乱，一般时将流程定义在实现中，即在action内部通过判断条件进行流程跳转．strust２的流程流程可读性差．</p>
+
+<h3 id="section-2">1.2原理介绍</h3>
+
+<p>需要声明的是Spring  Web Flow　的构建时基于SpringMVC之上的，所以所有的流程都是由SpringMVC的DispatcherServlet负责管理和转发．但DispatcherServlet并不能直接知道流程请求和流程行为的对应关系，和bean使用一样，流程需要定义，加载，注册和执行．Spring Web Flow的工作是通过<strong>配置流程注册表</strong>将应用中定义的流程进行加载并注册，当用户进入一个流程时,通过装配了流程注册表引用的FlowHanderMapping查找用户请求URL的对应流程，再通过FlowHandlerAdapter相应该流程请求．FlowHandlerAdapter配置了一个流程执行器，可以执行流程请求．</p>
+
+<p>上面说的流程是处理一个事情的步骤，<strong>流程由三个主要元定义的：状态，转移和流程数据．</strong></p>
+
+<p><strong>状态</strong>：流程中事件发生的地点．<br />
+<strong>转移</strong>：连接状态的线，从一个状态转到另一个状态．<br />
+<strong>数据</strong>：流程在执行和转移时携带的数据．</p>
+
+<h2 id="section-3">2.相关概念及配置</h2>
+
+<p>接下来我们进行一些配置，包括jar,注册表配置，执行器配置，处理请求配置等．</p>
+
+<h3 id="spring-web-flow">2.1.Spring Web Flow的相关包</h3>
+
+<blockquote>
+  <p>org.springframe.binding-x.x.x.RELEASE.jar<br />
+org.springframe.faces-x.x.x.RELEASE.jar<br />
+org.springframe.js-x.x.x.RELEASE.jar<br />
+org.springframe.js.resources-x.x.x.RELEASE.jar<br />
+org.springframe.webflow-x.x.x.RELEASE.jar<br />
+在本例中质押binding和webflow</p>
+</blockquote>
+
+<h3 id="section-4">2.2配置流程注册表</h3>
+<p>注册表的主要工作时负责流程的定义查找，加载和注册，<strong>不负责创建和执行</strong>．注册好的流程提供给执行器，是执行器能够查找并使用这些流程．</p>
+
+<pre><code>&lt;flow:flow-registry id="flowRegistry" base-path="/WEB-INF/flows"&gt;
+　　　　&lt;flow:flow-location-pattern value="*-flow.xml" /&gt;
+&lt;flow:flow-registry&gt;
+</code></pre>
+
+<p>这里定义了流程注册表flowRegistry，指定了流程定义的文件位置在/WEB-INF/flows下，并且文件名字以-flow.xml.注册表将匹配的所有文件加载，并注册这些流程．<br />
+ 当然也可以通过flow-location-pattern指定文件名字来加载,还可以为该流程设置具体的ID．</p>
+
+<h3 id="section-5">2.3织入流程执行器</h3>
+<p>主要负责驱动流程的执行．当用户进入一个流程时，流程执行器就会为用户创建并启动一个流程．</p>
+
+<pre><code>&lt;flow:flow executor id="flowExecutor" flow-refistry="flowRegistry"/&gt;
+</code></pre>
+
+<h3 id="section-6">2.4 处理流程请求</h3>
+<p>配置FlowHandlerMapping</p>
+
+<pre><code>&lt;bean class="org.springframework.webflow.mvc.servlet.FlowHandlerMapping"&gt;
+	&lt;property name="flowRegistry" ref="flowRegistry" /&gt;
+&lt;/bean&gt;
+</code></pre>
+
+<p>配置FlowHandlerAdapter</p>
+
+<pre><code>&lt;bean class="org.springframework.webflow.mvc.servlet.FlowHandlerAdapter"&gt;
+ 	&lt;property name="flowExecutor" ref="flowExecutor" /&gt;
+&lt;/bean&gt;
+</code></pre>
+
+<h3 id="section-7">2.5 流程组件</h3>
+
+<h4 id="section-8">2.5.1 状态</h4>
+
+<p><strong>状态包括是行为(action),决策(decision),结束(end),子流程(subflow)或视图(view)类型．</strong><br />
+  1)视图(view)：为用户展现信息，支持任意视图类型．<br />
+有３种写法</p>
+
+<pre><code>  1. &lt; view-state id="welcome"/&gt;  id对应流程内标状态和试图名称
+  2. &lt; view-state id="welcome" view="greeting"/&gt;　
+  3. &lt; view-state id="takePlayment" model="flowScope.paymentDetails"&gt; 绑定流程范围的paymentDetails对像
+</code></pre>
+
+<p>2)行为状态<br />
+行为状态是应用程序自身执行的任务，可以理解为方法调用，根据调用结果转移状态．</p>
+
+<pre><code>&lt;action-state id="saveOrder" 
+	&lt;evaluate expression="pizzaFlowActions.saveOrder(order)"/&gt;
+&lt;/action-state&gt;
+</code></pre>
+
+<p>pizzaFlowActions是指某个bean ID<br />
+  3)决策状态<br />
+通过条件判断决定转移．</p>
+
+<pre><code>&lt;decision-state id="checkDeliverArea" &gt;
+	&lt;if test="pizzaFlowActions.checkDeliveryArea(customer.zipCode)"
+	then="addCustomer"
+	else="deliveryWarning" /&gt;
+&lt;/decision-state&gt;
+</code></pre>
+
+<p>4)子流程状态<br />
+运行一个正在执行的流程调用另一个流程．类似于一个方法调用另一个方法</p>
+
+<pre><code>&lt;subflow-state id="order" subflow="pizaa/order"
+    &lt;input name="order" value="order" /&gt;
+    &lt;transition on="orderCreated" to="payment"&gt;
+&lt;/subflow-state&gt;
+＂&lt; input &gt;＂ 是作为子流程的输入．
+</code></pre>
+
+<p>５)结束状态<br />
+	<end-state id="customerReady"></end-state></p>
+
+<h4 id="section-9">2.5.2转移</h4>
+<p>局部转移，在某个状态下适用</p>
+
+<pre><code>&lt; transition to=""&gt;:从当前状态转移到to对应的状态
+&lt; transition on="" to=""&gt; ：如果触发了on对应的事件，则跳到to事件
+</code></pre>
+
+<p>全局转移，所有状态都可以</p>
+
+<pre><code>&lt; global-transitions&gt;
+     &lt; transition on="" to="" /&gt;
+&lt; /global-transitions&gt;
+</code></pre>
+
+<h4 id="section-10">2.5.3数据</h4>
+<p>１.声明变量包含3种</p>
+
+<pre><code>&lt; var name="" class=""&gt;
+&lt; evaluate result="" expression=""&gt;　expression中可以用ＳpEL．
+&lt;set name="" value=" "  &gt;value可以用ＳpEL．
+</code></pre>
+
+<p>２．作用域<br />
+- Conversation:最高层级的流程开始创建时创建，在最高层级的流程结束时销毁．最高层级流程与其子进程共享<br />
+- Flow: 流程<strong>开始创建</strong>时创建，在流程销毁时销毁．<br />
+- Request:当请求<strong>进入</strong>流程时创建，在流程返回时销毁<br />
+- Flash：当流程<strong>开始创建</strong>时创建，在流程销毁时销毁．在视图状态渲染后它也会销毁．<br />
+- View:进入<strong>视图</strong>状态时创建，退出这个状态时销毁．</p>
+
+<p><strong>var 始终时流程作用域<br />
+set 和 evaluate通过name 和result属性前缀指定作用域</strong></p>
+
+<h2 id="section-11">小结</h2>
+
+<ol>
+  <li>Spring Web Flow主要用于流程编程，实现了流程定义，流程行为和视图解耦．</li>
+  <li>Spring　Web　Flow在springMVC基础上创立． 需要DisptacherFilter分配</li>
+  <li>整个流程是流程注册表查找，加载和注册流程定义．FlowHandlerMapping根据用户请求查找URL对应流程，并使用FlowHandlerAdapter执行．</li>
+  <li>流程由三个主要元定义的：状态，转移和流程数据．</li>
+  <li>状态包括是行为(action),决策(decision),结束(end),子流程(subflow)或视图(view)类型</li>
+  <li>转移分为局部和全局，共三种配置方法</li>
+  <li>数据作用域有５种:Flow,Conversation,Ｒequest,Flash,View</li>
+</ol>
+
+
+                <hr>
+
+                
+                <!-- 多说 Share start -->
+                </style>
+                <div class="ds-share"
+                    style="text-align: right"
+                    data-thread-key="/spring/spring-web-flow"
+                    data-title="Spring WeB Flow初识"
+                    data-url="http://jaylonZheng.github.io/spring/spring-web-flow.html"
+                    data-images="http://jaylonZheng.github.io/img/about-bg.jpg"
+                    data-content="
+  本博文主要讲如何Spring WeB Flow的原理以及如何使用
+
+
+1背景介绍
+
+1.1背景
+平时中我们尝具有一些流程化的操作，如上网购物时，一般... | 郑江龙的博客 | Joe Blog " >
+                    <div class="ds-share-inline">
+                      <ul  class="ds-share-icons-16">
+                        <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
+                        <li><a class="ds-wechat flat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+                        <li><a class="ds-weibo flat" href="javascript:void(0);" data-service="weibo">微博</a></li>
+                        <li><a class="ds-douban flat" href="javascript:void(0);" data-service="douban">豆瓣</a></li>
+                      </ul>
+                      <div class="ds-share-icons-more">
+                      </div>
+                    </div>
+                <hr>
+                </div>
+                <!-- 多说 Share end-->
+                
+
+
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/spring/spring-web-flow-action.html" data-toggle="tooltip" data-placement="top" title="pring WeB Flow　实战">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+
+                
+                <!-- 多说评论框 start -->
+                <div class="comment">
+                    <div class="ds-thread"
+                        data-thread-key="/spring/spring-web-flow"
+                        data-title="Spring WeB Flow初识"
+                        data-url="http://jaylonZheng.github.io/spring/spring-web-flow.html" >
+                    </div>
+                </div>
+                <!-- 多说评论框 end -->
+                
+
+            </div>
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags.html/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+        				
+                            
+                				<a href="/tags.html/#Spring" title="Spring" rel="2">
+                                    Spring
+                                </a>
+                            
+        				
+                            
+                				<a href="/tags.html/#Java" title="Java" rel="2">
+                                    Java
+                                </a>
+                            
+        				
+        			</div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+                    
+                        <li><a href="http://luodw.github.io/">罗道文</a></li>
+                    
+                        <li><a href="http://my.csdn.net/lepdou">张乐</a></li>
+                    
+                        <li><a href="http://mingxinglai.com/">赖明星</a></li>
+                    
+                        <li><a href="http://ruanrc.github.io/">阮榕城</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+<!-- Duoshuo hacking -->
+<input id="dsUser" type="hidden" value="jaylonzheng"  />
+<div id="back-top">
+  <a href="#top" title="回到顶部"></a>
+</div>
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User hacking by Hux
+    var _user = document.getElementById('dsUser').value;
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user };
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+<script>
+$("#back-top").hide();
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('#back-top').fadeIn();
+    } else {
+      $('#back-top').fadeOut();
+    }
+  });
+  $('#back-top a').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+  });
+});
+
+</script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("http://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    
+
+                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
+                    
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/入镜繁华">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="http://weibo.com/入镜繁华">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/jaylonZheng">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 郑江龙 Blog 2015
+                    <br>
+                    Theme by <a href="http://jaylonZheng.github.io">jaylonZheng</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=jaylonZheng&repo=jaylonZheng.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- Highlight.js -->
+<script>
+    async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+        hljs.initHighlightingOnLoad();
+    })
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+<link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+
+<!--fastClick.js -->
+<script>
+    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+<!-- BT hacking -->
+<input id="baId" type="hidden" value="b9ed317e24e1c8d431ed54dd96e2b086"  />
+<!-- Baidu Tongji -->
+<script>
+    // dynamic User hacking by Hux
+    var _baId = document.getElementById('baId').value;
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+
+	
+    })();
+</script>
+
+
+
+
+
+
+<script language="javascript" type="text/javascript">
+increase();
+//自增
+function increase(filename){
+　　var s=readFile(filename);
+  if(s=="")
+	s==0;
+   var count=parseInt(s);
+   count=count+1;
+   writeFile(filename,count);
+}
+//读文件
+function readFile(filename){
+	var fso = new ActiveXObject("Scripting.FileSystemObject");
+	var f = fso.OpenTextFile(filename,1);
+	var s = "";
+	while (!f.AtEndOfStream)
+	s += f.ReadLine()+"\n";
+	f.Close();
+	return s;
+}
+
+//写文件
+function writeFile(filename,filecontent){
+	var fso, f, s ;
+	fso = new ActiveXObject("Scripting.FileSystemObject");
+	f = fso.OpenTextFile(filename,8,true);
+	f.WriteLine(filecontent);
+	f.Close();
+	alert('ok');
+}
+</script>
+
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+
+
+</body>
+
+</html>
