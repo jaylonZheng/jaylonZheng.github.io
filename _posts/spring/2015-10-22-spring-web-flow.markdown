@@ -1,5 +1,5 @@
 ---
-layout:     blog
+layout:     post
 title:      "Spring WeB Flow初识"
 subtitle:   "介绍Spring WeB Flow基本概念和流程"
 date:       2015-10-22 20:31:00
