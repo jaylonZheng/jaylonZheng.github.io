@@ -70,7 +70,7 @@
                     {% endif %}
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}{{site.provider.custom}}
+                    Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
                     <br>
                     Theme by <a href="http://jaylonZheng.github.io">jaylonZheng</a> |
                     <iframe
@@ -133,6 +133,27 @@
 </script>
 
 
+{% if site.ba_track_id %}
+<!-- BT hacking -->
+<input id="baId" type="hidden" value="{{site.ba_track_id}}"  />
+<!-- Baidu Tongji -->
+<script>
+    // dynamic User hacking by Hux
+    var _baId = document.getElementById('baId').value;
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+
+	
+    })();
+</script>
+{% endif %}
+
 {% if site.ga_track_id %}
 <!-- GA hacking -->
 <input id="gaId" type="hidden" value="{{site.ga_track_id}}"  />
@@ -155,21 +176,38 @@
 {% endif %}
 
 
-{% if site.ba_track_id %}
-<!-- BT hacking -->
-<input id="baId" type="hidden" value="{{site.ba_track_id}}"  />
-<!-- Baidu Tongji -->
-<script>
-    // dynamic User hacking by Hux
-    var _baId = document.getElementById('baId').value;
 
-    // Originial
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?" + _baId;
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
+<script language="javascript" type="text/javascript">
+
+//自增
+function increase(filename){
+　　var s=readFile(filename);
+  if(s=="")
+	s==0;
+   var count=parseInt(s);
+   count=count+1;
+   writeFile(filename,count);
+}
+//读文件
+function readFile(filename){
+	var fso = new ActiveXObject("Scripting.FileSystemObject");
+	var f = fso.OpenTextFile(filename,1);
+	var s = "";
+	while (!f.AtEndOfStream)
+	s += f.ReadLine()+"\n";
+	f.Close();
+	return s;
+}
+
+//写文件
+function writeFile(filename,filecontent){
+	var fso, f, s ;
+	fso = new ActiveXObject("Scripting.FileSystemObject");
+	f = fso.OpenTextFile(filename,8,true);
+	f.WriteLine(filecontent);
+	f.Close();
+	alert('ok');
+}
 </script>
-{% endif %}
+
+
