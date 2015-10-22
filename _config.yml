@@ -53,8 +53,7 @@ ba_track_id:b9ed317e24e1c8d431ed54dd96e2b086
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
 ga_domain: huangxuan.me
-analytics :
-provider : custom
+
 
 
 # Sidebar settings
