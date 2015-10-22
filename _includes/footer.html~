@@ -159,7 +159,6 @@
 {% if site.ba_track_id %}
 <!-- BT hacking -->
 <input id="baId" type="hidden" value="{{site.ba_track_id}}"  />
-
 <!-- Baidu Tongji -->
 <script>
     // dynamic User hacking by Hux
