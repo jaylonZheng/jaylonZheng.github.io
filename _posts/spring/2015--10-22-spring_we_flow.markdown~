@@ -1,0 +1,16 @@
+---
+layout:     post
+title:      "Spring WeB Flow"
+subtitle:   "实战"
+date:       2015-10-20 12:00:00
+author:     "郑江龙"
+categories: spring
+header-img: "img/post-bg-alibaba.jpg"
+tags:
+    - Spring
+    - java
+---
+>本博文主要讲如何Spring WeB Flow的原理以及如何使用
+
+##原理介绍
+Spring  Web Flow 是一个Web框架，适用于元素流程运行规定的程序．
